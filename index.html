@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+    <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+    <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+    <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+    <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>The digital home of Nick and Krista Skytland</title>
+	<meta name="description" content="Biography Nicholas Skytland">
+	<meta name="author" content="Nicholas Skytland">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="main/css/base.css">
+	<link rel="stylesheet" href="main/css//skeleton.css">
+	<link rel="stylesheet" href="main/css/layout.css">
+	
+	<script type="text/javascript" src="http://use.typekit.com/nbq7ztl.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="main/images/favicon.ico">
+	<link rel="apple-touch-icon" href="main/images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="main/images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="main/images/apple-touch-icon-114x114.png">
+
+    <!-- #Bottom Fade
+    ================================================== -->
+    <!--[if lte IE 6]>
+    
+            <style type="text/css" media="screen">
+                #bottom_fade {
+                    background: none;
+                    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='bottom-fade.png',sizingMethod='scale');
+                    left: 0px;
+                    height: 200px;
+                    position: absolute;
+                    bottom: -18px;
+                    width: expression(document.body.clientWidth);
+                }
+                html, body {
+                    height: 100%; overflow: auto;
+                }
+            </style>
+        <![endif]-->
+
+	<style>
+    
+    #page_wrap {
+        width: 1200px;
+        z-index: 1;
+        margin: 10px auto;
+    }
+    
+    #bottom_fade {
+        width: 1200px;
+        height: 200px;
+        z-index: 99;
+        position: fixed;
+        bottom: 0px;
+        background: url("main/images/bottom-fade.png") bottom center no-repeat;
+    }
+	
+	</style>
+
+    <!-- #Smooth Scroll Functionality
+    ================================================== -->
+    
+	  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	  <script>!window.jQuery && document.write(unescape('%3Cscript src="js/lib/jquery/jquery.js"%3E%3C/script%3E'));</script>
+	  <script src="main/js/src/jquery.smooth-scroll.js"></script>
+	  <script src="main/js/lib/jquery.ba-bbq.js"></script>
+	  <script>
+		$(document).ready(function() {
+	  
+		  $('a[href*="#"]').live('click', function() {
+			if ( this.hash ) {
+			  $.bbq.pushState( '#/' + this.hash.slice(1) );
+			  return false;
+			}
+		  });
+	  
+		  $(window).bind('hashchange', function(event) {
+			var tgt = location.hash.replace(/^#\/?/,'');
+			if ( document.getElementById(tgt) ) {
+			  $.smoothScroll({scrollTarget: '#' + tgt});
+			}
+		  });
+	  
+		  $(window).trigger('hashchange');
+		});
+	</script>
+  
+</head>
+
+<body>
+
+	<div class="container">
+    <div class="align">
+
+    <h2><a href="#contactus"><img class="rocket" src="main/images/home.png" width="120" height="120" alt="onward"></a>
+    <br/>Hello.</h2>
+    <h3>Welcome to the digital home of <a href="index.html#biography">Nick</a> and <a href="index.html#biography">Krista</a> Skytland.  This is the place where we archive our <a href="index.html#blog">thoughts</a>, <a href="index.html#media">photos</a> and other various effects.</h3>   
+    <p>
+    <h4><a href="index.html#biography">Nick</a> works at NASA and is currently researching how governments can apply the art and science of mass collaboration to help solve humanity's toughest challenges.  <a href="index.html#biography">Krista</a> is a professional educator working to positively influence the next generation of Americans. We are blessed with two adventurous sons and an understanding dog. Collectively, we represent 9.32% of the total number of Skytlands currently living in the world today!  We know this because we've done quite a bit of research into the <a href="index.html#genealogy">genealogy of the Skytland name</a>, stretching back 14 generations.  We encourage you to check out our <a href="index.html#genealogy">research</a>, <a href="index.html#media">photos</a>, <a href="index.html#presentations">presentations</a>, <a href="index.html#art">artwork</a>, <a href="index.html#blog">blog posts</a>, and other <a href="index.html#projects">projects</a> .  If you are interested in contacting us, here are a few ways to <a href="index.html#contactus">get in touch</a>. </h4>
+    
+    <h4 id="biography"><strong>Biography</strong></h4>
+    <a href="main/bio/nicholas.html">Nicholas Skytland</a><br/>
+    <a href="main/bio/krista.html">Krista Skytland</a><br/>
+    
+    <h4 id="media"><strong>Photos</strong></h4>
+    <a href="http://photos.skytland.com/328869">Kai's first week home</a><br/>
+    <a href="http://photos.skytland.com/305717">Kai's birth announcement</a><br/>
+    <a href="http://photos.skytland.com/303887">Skytland family photo shoot</a><br/>
+    <a href="http://photos.skytland.com/312248">OpenROV meets the OpenWater</a><br/>
+    <a href="http://photos.skytland.com/303827">Asher at his best</a><br/>
+    <a href="http://photos.skytland.com/"><strong>View all memories</strong></a><br/>
+    
+    <h4 id="blog"><strong>Blog Posts</strong></h4>
+    <a href="http://blog.skytland.com/the-good-the-bad-and-the-tired/">Month One: The Good, The Bad, and The Tired</a><br/>
+    <a href="http://blog.skytland.com/having-a-baby-naturally/">Having a baby, naturally</a><br/>
+    <a href="http://blog.skytland.com/kais-birth-story/">Kai’s Birth Story</a><br/>
+    <a href="http://blog.skytland.com/letter-to-kai/">Letter to Kai</a><br/>
+    <a href="http://blog.skytland.com/week-39-2/">Week 39</a><br/>
+    <a href="http://blog.skytland.com/archives/"><strong>View all blogs</strong></a><br/>
+    
+    <!--
+    <h4 id="genealogy"><strong>Genealogy</strong></h4>
+    <a href="#">Overview</a><br/>            
+    <a href="#">Complete Skytland Family Tree</a><br/>            
+    <a href="#">Stalsberg Branch Family Genealogy</a><br/>            
+    <a href="#">Knox Branch Family Genealogy</a><br/>            
+    <a href="#">Gibbs Branch Family Genealogy</a><br/> 
+    -->           
+    
+    <h4 id="presentations"><strong>Presentations</strong></h4>
+    <a href="http://nicholas.skytland.com/?p=139">A License to RHoK</a><br/>
+    <a href="http://nicholas.skytland.com/?p=105">7 tips to effectively communicate with the next generation</a><br/>
+    <a href="http://nicholas.skytland.com/?p=23">The Next Rocket Scientist: YOU</a><br/>
+    <a href="http://nicholas.skytland.com/?p=88">Why The Moon?</a><br/>
+    <a href="http://nicholas.skytland.com/?p=66">Digital Natives</a><br/>
+    <a href="http://nicholas.skytland.com/"><strong>View all presentations</strong></a><br/>
+    
+    <h4 id="art"><strong>Artwork</strong></h4>
+    <a href="http://photos.skytland.com/415141">Custom Nursery Painting</a><br/>
+    <a href="http://nicholas.skytland.com/?p=1">King Hasalot Series</a><br/>
+    <a href="http://nicholas.skytland.com/?p=124">Gov 2.0 Sketch Video</a><br/>
+    
+    <h4 id="projects"><strong>Projects</strong></h4>
+    <a href="http://open.nasa.gov">open.NASA</a><br/>
+    <!--<a href="http://thearts.cc/">thearts.cc</a><br/>-->
+    <a href="http://www.rhok.org">Random Hacks of Kindness</a><br/>
+    <a href="http://www.gwob.org">Geeks Without Bounds</a><br/>
+    <a href="http://spaceipsum.com">Space Ipsum</a><br/>  
+    
+    <h4 id="news"><strong>News</strong></h4>
+    <a href="http://abclocal.go.com/ktrk/story?section=news%2Fconsumer%2Frecalls&id=8774501">Popular Bumbo infant floor seat recalled (KHOU, 2012)</a><br />
+    <a href="http://www.bbc.co.uk/news/technology-17791091">NASA sets challenges for citizen scientists (BBC, 2012)</a><br/>
+    <a href="http://edition.cnn.com/2011/TECH/innovation/06/03/hackers.fight.climate.change/">Hackers gather around the globe to fight climate change (CNN, 2011)</a><br/>
+    <a href="http://www.today.mccombs.utexas.edu/2010/05/class-of-2010-commencement-profile-nicholas-skytland-houston-mba/">How to Make NASA Cool (Again) (University of Texas, 2010)</a><br/>
+    <a href="http://www.msnbc.msn.com/id/29728196/#.UDcRKWjLxss">NASA looks to social networking to lure Gen Y (MSNBC, 2009)</a><br/>      
+    <a href="http://www.wired.com/wiredscience/2008/02/nasas-gen-y-ste/">NASA’s Gen Y Speaks Out (Wired Magazine, 2008)</a><br/>
+    
+    <h4 id="contactus"><strong>Contact Us</strong></h4>
+    <a href="http://www.twitter.com/skytland">Nick (@skytland) on Twitter</a><br/>
+    <a href="http://www.facebook.com/skytland">Nick on Facebook</a><br/>
+    <a href="http://www.linkedin.com/in/skytland">Nick on LinkedIn</a><br/>
+    <a href="http://www.twitter.com/kskytland">Krista (@kskytland) on Twitter</a><br/>
+    <a href="http://www.facebook.com/kskytlan">Krista on Facebook</a><br/>      
+        
+    </div></div><!-- container and align -->
+    
+    <div id="page_wrap">
+    <div id="bottom_fade"></div>
+    </div>
+
+<!-- End Document
+================================================== -->
+</body>
+</html>
