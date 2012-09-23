@@ -10,8 +10,8 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
-	<title>Biography of Nicholas Skytland</title>
-	<meta name="description" content="Biography of Nicholas Skytland">
+	<title>The digital home of Nick and Krista Skytland</title>
+	<meta name="description" content="Biography Nicholas Skytland">
 	<meta name="author" content="Nicholas Skytland">
 
 	<!-- Mobile Specific Metas
@@ -20,23 +20,23 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="../css/base.css">
-	<link rel="stylesheet" href="../css/skeleton.css">
-	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" href="main/css/base.css">
+	<link rel="stylesheet" href="main/css//skeleton.css">
+	<link rel="stylesheet" href="main/css/layout.css">
 	
 	<script type="text/javascript" src="http://use.typekit.com/nbq7ztl.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
 	<!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" href="../../images/favicon.ico">
-	<link rel="apple-touch-icon" href="../../images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="../../images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="../../images/apple-touch-icon-114x114.png">
+	<link rel="shortcut icon" href="main/images/favicon.ico">
+	<link rel="apple-touch-icon" href="main/images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="main/images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="main/images/apple-touch-icon-114x114.png">
 
     <!-- #Bottom Fade
     ================================================== -->
@@ -72,23 +72,53 @@
         z-index: 99;
         position: fixed;
         bottom: 0px;
-        background: url("../images/bottom-fade.png") bottom center no-repeat;
+        background: url("main/images/bottom-fade.png") bottom center no-repeat;
     }
-    
-    </style>
+	
+	</style>
 
+    <!-- #Smooth Scroll Functionality
+    ================================================== -->
+    
+	  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	  <script>!window.jQuery && document.write(unescape('%3Cscript src="js/lib/jquery/jquery.js"%3E%3C/script%3E'));</script>
+	  <script src="main/js/src/jquery.smooth-scroll.js"></script>
+	  <script src="main/js/lib/jquery.ba-bbq.js"></script>
+	  <script>
+		$(document).ready(function() {
+	  
+		  $('a[href*="#"]').live('click', function() {
+			if ( this.hash ) {
+			  $.bbq.pushState( '#/' + this.hash.slice(1) );
+			  return false;
+			}
+		  });
+	  
+		  $(window).bind('hashchange', function(event) {
+			var tgt = location.hash.replace(/^#\/?/,'');
+			if ( document.getElementById(tgt) ) {
+			  $.smoothScroll({scrollTarget: '#' + tgt});
+			}
+		  });
+	  
+		  $(window).trigger('hashchange');
+		});
+	</script>
+  
 </head>
+
 <body>
 
 	<div class="container">
+    <div class="align">
 
-		<h2><img class="rocket" src="../images/404.gif"alt="404"></a>
+   <h2><img class="rocket" src="../images/404.gif"alt="404"></a>
         <br/>This is so embarrasing...</h2>
         <p>
             <h5>but unfortunately the page you are looking for doesn't exist.
             </h5>
         
-    </div><!-- container -->
+    </div></div><!-- container and align -->
     
     <div id="page_wrap">
     <div id="bottom_fade"></div>
